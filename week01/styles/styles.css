@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
+
+/* Body Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #888;
+}
+
+/* Main Content Styles */
+main {
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  /* Mobile View */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    margin: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Larger Views */
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}

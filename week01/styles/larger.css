@@ -1,0 +1,68 @@
+/* larger.css */
+
+@media (min-width: 768px) {
+    /* CSS rules for larger screens */
+  
+    /* Color Scheme */
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+  
+    header {
+      background-color: #222;
+      color: #fff;
+    }
+  
+    nav {
+      background-color: #444;
+      color: #fff;
+    }
+  
+    nav ul li a {
+      color: #fff;
+    }
+  
+    nav ul li a:hover {
+      color: #aaa;
+    }
+  
+    .card {
+      background-color: #eee;
+    }
+  
+    footer {
+      background-color: #222;
+      color: #fff;
+    }
+  
+    /* Typography */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    h1, h2, h3 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    p {
+      margin-bottom: 1em;
+    }
+  }
