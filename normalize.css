@@ -1,0 +1,38 @@
+  /* Add your custom CSS normalization rules here */
+    /* ... */
+    
+    /* CSS for the hamburger menu */
+    #hamburger-button {
+        display: none; /* Hide the hamburger button by default */
+        cursor: pointer;
+      }
+  
+      #hamburger-button span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+        margin-bottom: 6px;
+      }
+  
+      @media (max-width: 768px) {
+        /* Show the hamburger button only in mobile view */
+        #hamburger-button {
+          display: block;
+        }
+  
+        #hamburger-menu {
+          display: none; /* Hide the menu items by default */
+          position: absolute;
+          top: 50px;
+          right: 20px;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+  
+        #hamburger-menu.show-menu {
+          display: block; /* Show the menu items when the class is applied */
+        }
+      }
+    
