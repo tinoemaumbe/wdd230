@@ -1,26 +1,37 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+ 
   <link href="styles/base.css" rel="stylesheet">
   <link href="styles/larger.css" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tinotenda Maumbe - WDD 230 - Web Frontend Development</title>
   <meta name="description" content="WDD 230 - Web Frontend Development, [Your Full Name], Course Assignment Portal, Web Frontend, Development, HTML, CSS">
-  <meta name="author" content="[Your Full Name]">
+  <meta name="author" content="Tinotenda Maumbe">
+
 </head>
+
 <body>
   <header>
     <img src="images/tititi.png" alt="profile picture">
     <h2>Tinotenda Maumbe</h2>
+    <div id="hamburger-button">&#8801;</div> 
+    <button id="dark-mode-toggle">⚙️ Dark Mode Toggle</button> 
   </header>
+
   <nav>
     <ul>
+ 
+      <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Chamber</a></li>
-      <li><a href="the-chamber-of-commerce-site-plan.html">Site Plan</a></li>
+      <li><a href="#">Site Plan</a></li>
       <li><a href="#">Form</a></li>
     </ul>
   </nav>
@@ -40,32 +51,20 @@
     </section>
     <section class="card">
       <h3>Gweru, Zimbabwe</h3>
-      <p> 18 degrees celcious windy</p>
+      <p>(-_-): 27 F</p>
       <p>Place Visits: 8</p>
     </section>
   </main>
   <footer>
+   
     <p>&copy; <span id="year"></span> Tinotenda Maumbe Midlands Zimbabwe</p>
     <p id="lastModified">Flag: <img src="images/tikokato.png" alt="Flag"></p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb icon">
+      </div>
   </footer>
-  <script>
-    const yearElement = document.getElementById("year");
-    const currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-
-    const dateElement = document.getElementById("lastModified");
-    const lastModifiedDate = document.lastModified;
-    dateElement.textContent = "Last Modified: " + lastModifiedDate;
-  </script>
-</body>
-</html>
-
-<body>
-  <!-- Body content goes here -->
-
-  <!-- Your existing HTML content -->
-
-  <!-- Reference to getDates.js -->
+  <script src="script.js"></script>
   <script src="getDates.js"></script>
 </body>
 </html>
