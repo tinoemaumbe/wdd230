@@ -55,7 +55,16 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #888;
 }
+    /* Add your custom CSS styles here */
+    /* ... */
 
+    /* CSS styles for the dark mode button */
+    .dark-mode-button {
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
 /* Main Content Styles */
 main {
   margin: 20px auto;
