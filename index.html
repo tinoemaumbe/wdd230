@@ -1,10 +1,7 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
- 
   <link href="styles/base.css" rel="stylesheet">
   <link href="styles/larger.css" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
@@ -21,14 +18,14 @@
   <header>
     <img src="images/tititi.png" alt="profile picture">
     <h2>Tinotenda Maumbe</h2>
-    <div id="hamburger-button">&#8801;</div> 
-    <button id="dark-mode-toggle">⚙️ Dark Mode Toggle</button> 
+  
+    <div id="hamburger-button">&#8801;</div>
+    <button id="dark-mode-toggle">⚙️ Dark Mode Toggle</button>
+   
   </header>
 
   <nav>
     <ul>
- 
-      <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Chamber</a></li>
       <li><a href="#">Site Plan</a></li>
@@ -36,6 +33,15 @@
     </ul>
   </nav>
   <main>
+    <section class="hero-section">
+      <h2>Favorite Latter-day Temple</h2>
+      <picture>
+        <source srcset="images/temple-mobile.webp" media="(max-width: 400px)">
+        <source srcset="images/temple-desktop.webp" media="(max-width: 960px)">
+        <img src="images/favourate temple.webp" alt="Favorite Latter-day Temple">
+      </picture>
+      <div class="overlay">Durban South Africa Temple</div>
+    </section>
     <h2>WDD 230: Web Frontend Development</h2>
     <section class="card">
       <h3>Learning Activities</h3>
@@ -55,16 +61,21 @@
       <p>Place Visits: 8</p>
     </section>
   </main>
+</main>
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120384.24718349354!2d29.732818461566172!3d-19.45523377108377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1934949a6ca1c7ad%3A0x7925dad5634bafd3!2sGweru!5e0!3m2!1sen!2szw!4v1695905190766!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
   <footer>
-   
     <p>&copy; <span id="year"></span> Tinotenda Maumbe Midlands Zimbabwe</p>
     <p id="lastModified">Flag: <img src="images/tikokato.png" alt="Flag"></p>
     <div class="social">
       <a href="https://facebook.com" target="_blank">
-          <img src="images/facebook.png" alt="fb icon">
-      </div>
+        <img src="images/facebook.png" alt="fb icon">
+      </a>
+    </div>
   </footer>
   <script src="script.js"></script>
   <script src="getDates.js"></script>
 </body>
+
 </html>
