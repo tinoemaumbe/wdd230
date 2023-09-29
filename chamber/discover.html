@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce | Discover</title>
+    <meta name="description" content="Welcome to the Chamber of Commerce website. Discover business opportunities and community resources. Join us today!">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/getDates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Discover Page</h1>
+    <nav>
+      <ul>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="grid-container">
+    <aside class="sidebar">
+      <h2>Sidebar Content</h2>
+      <div id="sidebar-message"></div>
+      <!-- Additional sidebar content can be added here -->
+    </aside>
+
+    <main>
+      <h2>Local Photos of Interest</h2>
+      <div class="image-container">
+        <img src="images/enterpree.webp" alt="Image 1" loading="lazy">
+        <figcaption>Discover the vibrant community of business</figcaption>
+      </div>
+      <div class="image-container">
+        <img src="images/indusrty.jpeg" alt="Image 2" loading="lazy">
+        <figcaption>Uncover the charm and diversity of your business</figcaption>
+      </div>
+      <div class="image-container">
+        <img src="images/Marketing_Ideas_For_Small_Businesses.webp" alt="Image 3" loading="lazy">
+        <figcaption>Experience the unique blend of tradition and innovation in your business</figcaption>
+      </div>
+      <div class="image-container">
+        <img src="images/netwroking.jpg" alt="Image 4" loading="lazy">
+        <figcaption>Let our Chamber of Commerce transport you to the heart of your business.</figcaption>
+      </div>
+      <div class="image-container">
+        <img src="images/sustainability.webp" alt="Image 5" loading="lazy">
+        <figcaption>Explore the wonders of your business through our Chamber of Commerce and create unforgettable memories.</figcaption>
+      </div>
+      <div class="image-container">
+        <img src="images/stock.jpg" alt="Image 6" loading="lazy">
+        <figcaption>Discover the beauty that awaits in your business</figcaption>
+      </div>
+    
+    </main>
+  </div>
+
+  <footer>
+    <div class="grid-container">
+      <div class="topFooter grid-container grid-x">
+        <div class="footerSocial">
+          <nav class="footerSocialNav">
+            <!--social media links -->
+          </nav>
+        </div>
+      </div>
+      <div class="bottomFooter grid-x grid-padding-x">
+        <div class="cell large-4 medium-6 small-12">
+          <h3 class="heavyTitle tiny white">Tinoe Area Chamber<br />of Commerce</h3>
+          <p>Main St. Accs 120<br />Gweru, TN 4201<br /><a href="mailto:tinoemaumbe@gmail.com">tinoemaumbe@gmail.com</a><br />(+263) 78-821-5963</p>
+        </div>
+        <div class="cell large-4 medium-6 small-12">
+          <h3 class="heavyTitle tiny white">Request a Newcomer Packet</h3>
+          <div class="footerEnews" data-form-url="index.php?src=forms&ref=Newcomers%20Packet_NEW%20WEBSITE&submenu=_newcomerspacket">
+            <form action="index.php?src=forms&ref=Newcomers%20Packet_NEW%20WEBSITE&submenu=_newcomerspacket" method="post">
+              <input type="hidden" name="form_url" value="index.php?src=forms&ref=Newcomers%20Packet_NEW%20WEBSITE&submenu=_newcomerspacket">
+              <input type="hidden" name="subject" value="Newcomers Packet Request">
+              <input type="hidden" name="redirect" value="thankyou.php?src=forms&ref=Newcomers%20Packet_NEW%20WEBSITE&submenu=_newcomerspacket">
+              <input type="hidden" name="email" value="tinoemaumbe@gmail.com">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="cell large-4 small-12">
+          <h3 class="heavyTitle tiny white">Office Hours</h3>
+          <p>Monday - Friday<br />8:00am - 5:00pm</p>
+          <p>Developed by: Tinotenda Maumbe</p>
+          <p>Course: WDD 230</p>
+          <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
