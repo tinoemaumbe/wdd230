@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/getDates.js" defer></script>
+
+      <title>Lazy Loading Images</title>
+      <style>
+        .image-container {
+          margin-bottom: 20px;
+        }
+      </style>
+    
 </head>
 <body>
   <header>
@@ -40,27 +48,27 @@
     <main>
       <h2>Local Photos of Interest</h2>
       <div class="image-container">
-        <img src="images/enterpree.webp" alt="Image 1" loading="lazy">
+        <img data-src="images/enterpree.webp" alt="Image 1">
         <figcaption>Discover the vibrant community of business</figcaption>
       </div>
       <div class="image-container">
-        <img src="images/indusrty.jpeg" alt="Image 2" loading="lazy">
+        <img data-src="images/indusrty.jpeg" alt="Image 2">
         <figcaption>Uncover the charm and diversity of your business</figcaption>
       </div>
       <div class="image-container">
-        <img src="images/Marketing_Ideas_For_Small_Businesses.webp" alt="Image 3" loading="lazy">
+        <img data-src="images/Marketing_Ideas_For_Small_Businesses.webp" alt="Image 3" 
         <figcaption>Experience the unique blend of tradition and innovation in your business</figcaption>
       </div>
       <div class="image-container">
-        <img src="images/netwroking.jpg" alt="Image 4" loading="lazy">
+        <img data-src="images/netwroking.jpg" alt="Image 4" 
         <figcaption>Let our Chamber of Commerce transport you to the heart of your business.</figcaption>
       </div>
       <div class="image-container">
-        <img src="images/sustainability.webp" alt="Image 5" loading="lazy">
+        <img data-src="images/sustainability.webp" alt="Image 5" 
         <figcaption>Explore the wonders of your business through our Chamber of Commerce and create unforgettable memories.</figcaption>
       </div>
       <div class="image-container">
-        <img src="images/stock.jpg" alt="Image 6" loading="lazy">
+        <img data-src="images/stock.jpg" alt="Image 6" 
         <figcaption>Discover the beauty that awaits in your business</figcaption>
       </div>
     
@@ -124,7 +132,36 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/scripts.js" defer></script>
-  <script srs="scripts/getDates.js" defer></script>
+  <script src="scripts.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var lazyImages = [].slice.call(document.querySelectorAll("img[data-src]"));
+
+      if ("IntersectionObserver" in window) {
+        var lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.srcset = lazyImage.dataset.srcset;
+              lazyImage.classList.remove("lazy");
+              lazyImageObserver.unobserve(lazyImage);
+            }
+          });
+        });
+
+        lazyImages.forEach(function(lazyImage) {
+          lazyImageObserver.observe(lazyImage);
+        });
+      } else {
+        // Fallback for browsers that don't support Intersection Observer
+        lazyImages.forEach(function(lazyImage) {
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove("lazy");
+        });
+      }
+    });
+  </script>
 </body>
 </html>
