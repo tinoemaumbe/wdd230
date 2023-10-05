@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/form.css">
+  <title>Form Page</title>
+ 
+</head>
+
+<body background="">
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+  
+  <header>
+  <img src="images/tititi.png" alt="profile picture">
+  <h2>Tinotenda Maumbe</h2>
+
+  <div id="hamburger-button">&#8801;</div>
+  <button id="dark-mode-toggle">⚙️ Dark Mode Toggle</button>
+ 
+  </header>
+
+
+  <nav>
+    <ul>
+        <li><a href="#">Form</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Site Plan</a></li>
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+  </nav>
+
+  
+  <main>
+    <form action="record.html" method="get">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$">
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+        title="Please enter a valid email address">
+
+      <label for="page-rating">Page Rating:</label>
+      <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  
+  <footer>
+    <p>&copy; <span id="year"></span> Tinotenda Maumbe Midlands Zimbabwe</p>
+    <p id="lastModified">Flag: <img src="images/tikokato.png" alt="Flag"></p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="fb icon">
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="getDates.js"></script>
+</body>
+
+</html>
+
