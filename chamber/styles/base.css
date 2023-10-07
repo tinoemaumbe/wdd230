@@ -85,10 +85,50 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, figure {
     font-size: 20px;
     margin-bottom: 10px;
   }
+
+  /* Your existing CSS rules and declarations go here */
+
+/* Additional styling for the join page */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
   
   /* Footer styles */
   footer {
-    background-color: #f2f2f2;
+    background-color:none;
     padding: 20px 0;
     text-align: center;
   }
