@@ -1,7 +1,7 @@
 // links.js
 
 // Define the base URL for your project
-const baseURL = "https://tinoemaumbe.github.io/wdd230";
+const baseURL = "https://tinoemaumbe.github.io/wdd230/";
 
 // Define the URL for the links.json data file
 const linksURL = "https://tinoemaumbe.github.io/wdd230/data/links.json";
