@@ -1,0 +1,69 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week1/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "week1/activity2.html",
+            "title": "Activity 2"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week2/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "week2/activity2.html",
+            "title": "Activity 2"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week3/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "week3/activity2.html",
+            "title": "Activity 2"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week4/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "week4/activity2.html",
+            "title": "Activity 2"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "week5/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "week5/activity2.html",
+            "title": "Activity 2"
+          }
+        ]
+      }
+    ]
+  }
