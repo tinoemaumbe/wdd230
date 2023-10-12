@@ -38,5 +38,41 @@ hamburgerButton.addEventListener("click", () => {
 
 function toggleDarkMode() {
     const mainContent = document.getElementById("main-content");
-    mainContent.classList.toggle("dark-mode");
+    mainConten
+    t.classList.toggle("dark-mode");
   }
+
+
+
+
+
+
+  const apiKey = 'a9d23437628f6eb7437f66c23fb7090f'; // Replace with your OpenWeatherMap API key
+
+// Function to fetch weather data from OpenWeatherMap API
+async function getWeatherData() {
+  try {
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Gweru,zw&units=metric&appid=${apiKey}`);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log('Error fetching weather data:', error);
+  }
+}
+
+// Function to update the weather information in the HTML
+function updateWeatherInformation(data) {
+  const temperatureElement = document.getElementById('temperature');
+  const descriptionElement = document.getElementById('description');
+  const weatherIconElement = document.getElementById('weatherIcon');
+
+  temperatureElement.textContent = `Temperature: ${data.main.temp}°C`;
+  descriptionElement.textContent = `Condition: ${data.weather[0].description}`;
+  weatherIconElement.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  weatherIconElement.alt = `Weather Icon: ${data.weather[0].description}`;
+}
+
+// Fetch weather data and update the information card
+getWeatherData()
+  .then(data => updateWeatherInformation(data))
+  .catch(error => console.log('Error:', error));
