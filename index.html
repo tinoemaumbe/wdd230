@@ -29,7 +29,7 @@
       <li><a href="#">Home</a></li>
       <li><a href="#">Chamber</a></li>
       <li><a href="#">Site Plan</a></li>
-      <li><a href="#">Form</a></li>
+      <li><a href="form.html">Form</a></li>
     </ul>
   </nav>
   <main>
@@ -38,9 +38,9 @@
       <picture>
         <source srcset="images/temple-mobile.webp" media="(max-width: 400px)">
         <source srcset="images/temple-desktop.webp" media="(max-width: 960px)">
-        <img src="favourate temple.webp" alt="Favorite Latter-day Temple">
+        <img src="images/favourate temple.webp" alt="Favorite Latter-day Temple">
       </picture>
-            <div class="overlay">Durban South Africa Temple</div>
+      <div class="overlay">Durban South Africa Temple</div>
     </section>
     <h2>WDD 230: Web Frontend Development</h2>
     <section class="card">
@@ -55,10 +55,19 @@
         <li><a href="#">Week 7</a></li>
       </ul>
     </section>
-    <section class="card">
-      <h3>Gweru, Zimbabwe</h3>
-      <p>(-_-): 27 F</p>
-      <p>Place Visits: 8</p>
+    <section class="weather">
+      <h2>Weather Information</h2>
+      <div id="weatherCard"
+        <p id="temperature">Temperature: </p>
+        <p id="description">Condition: </p>
+        <img id="weatherIcon" src="images/weather.png" alt="Weather Icon">
+      </div>
+    </section>
+
+    <section class="location">
+      <h2>Gweru, Zimbabwe</h2>
+      <div id="mapContainer">
+      </div>
     </section>
   </main>
 </main>
@@ -70,12 +79,17 @@
     <p id="lastModified">Flag: <img src="images/tikokato.png" alt="Flag"></p>
     <div class="social">
       <a href="https://facebook.com" target="_blank">
-        <img src="facebook.png" alt="fb icon">
+        <img src="images/facebook.png" alt="fb icon">
       </a>
     </div>
   </footer>
   <script src="script.js"></script>
   <script src="getDates.js"></script>
+  <script src="links.js"></script>
 </body>
 
 </html>
+
+
+
+
