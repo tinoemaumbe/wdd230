@@ -79,7 +79,7 @@ let viewMode = 'grid'; // Default view mode
 
 // Function to fetch member data from the JSON file
 function getMemberData() {
-  return fetch('data/members.json')
+  return fetch('https://github.com/tinoemaumbe/wdd230/chamber/data/members.json')
     .then(response => response.json())
     .then(data => data.members)
     .catch(error => console.log('Error fetching member data:', error));
