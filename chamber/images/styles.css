@@ -1,0 +1,556 @@
+background {
+    height: 725px;
+}
+
+
+content {
+    max-width: 800px;
+}
+
+#content{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.icon{
+    width: 80px;
+}
+
+.logo{
+    width: 80px;
+}
+
+nav a{
+    text-align: center;
+}
+
+#hero-msg h1{
+    text-align: center;
+} 
+
+#hero-msg h4{
+    text-align: center;
+}
+
+.button-box{
+    text-align: center;
+}
+
+main section{
+    text-align: center;
+}
+
+.h2{
+    text-align: center;
+}
+
+
+#hero-img{
+    width: 100%;
+}
+
+
+body {
+    background-color:wheat; 
+}
+header {
+    background-color:wheat;
+}
+
+.home-tittle{
+    background-color:none;
+    color: darkblue;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: solid;
+    background-color:none;
+    color: crimson;
+}
+
+nav a:hover {
+    background-color: none;
+    color:black;
+}    
+
+
+.book :hover{
+    background-color:none;
+    color: gray;
+}
+
+.join :hover{
+    background-color: none;
+    color: brown;
+}
+
+.book{
+    text-align: right;
+    text-decoration: none;
+    background-color: azure;
+    color: rgb(2, 129, 66);
+}
+        
+
+.join{
+    text-align: center;
+    text-decoration: none;
+    background-color: azure;
+    color:rgb(8, 106, 131);
+}
+
+#background{
+    color:lightgreen;
+}
+
+.msg{
+    color:rgb(15, 190, 53)
+}
+
+footer{
+    background-color: none;
+    color: darkred;
+    font-size: large;
+}
+
+footer a {
+    text-align: left;
+    background-color:none;
+    color: rgb(139, 6, 6);
+    text-decoration: none;
+}    
+                    
+
+footer a:hover {
+    background-color: none;
+    color :mediumvioletred
+}    
+                    
+
+ 
+footer p a:hover {
+    text-decoration: underline;
+}    
+
+h4{
+    background-color: bisque;
+    color: black;
+}
+
+msg p{
+    background-color: none;
+    color: darkred;
+
+}
+
+
+.home-tittle{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+.book, .join{
+    font-size: 12px;
+}
+
+.msg p{
+    font-size: 2em;
+}
+
+.msg{
+    background-color: white;
+    line-height: 1.5em;
+}
+
+body{
+    background-color:none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+}
+
+#logo_link{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding-top: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    padding: 35px;
+}
+
+.book, .join{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.icon{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.msg p{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding: 35px;
+}
+
+.msg p{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+footer{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding: 25px 50px;
+}
+
+footer.social img{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.home-tittle{
+    background-color: none;
+    color:black;
+    text-decoration: none;
+    padding: 15Spx 30px;
+    margin-top: 10px;
+}
+
+.book, .join{
+    background-color: none;
+    color:black;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+}
+
+.image2-card, .image3-card{
+    background-color: none;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 200px 0;
+}
+
+footer{
+    background-color: none;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 200px;
+}
+
+.book, .join{
+    background-color: none;
+    color:black;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.card-img{
+    border: 10px solid #d9c2a3;
+}
+
+main section img{
+    box-sizing: border-box;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+
+#hero-msg h4 {
+    color:black;
+}
+
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 10fr;
+
+}
+
+
+.image2-card {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+ 
+}
+
+.image3-card{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+} 
+
+.image2-card, .image3-card{
+    background-color: none;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 200px 0;
+}
+
+.msg p{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding: 35px;
+}
+
+.msg p{
+    text-decoration: none;
+    color: bisque;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+
+.image4-card {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+ 
+}
+
+.image5-card{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+} 
+
+.image4-card, .image5-card{
+    background-color: none;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 200px 0;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.image7-card {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+ 
+}
+
+.image8-card{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+} 
+
+.image7-card, .image8-card{
+    background-color: none;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 200px 0;
+}
+
+
+.msg p{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 35px;
+}
+
+.msg p{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+            
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .image2-card, .image3-card, .image4-card, .image5-card, .image7-card, .image8-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
