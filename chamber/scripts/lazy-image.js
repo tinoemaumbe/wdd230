@@ -48,7 +48,7 @@ images.forEach((image) => {
     lazyImageObserver.observe(lazyImage);
   });
 
-  // Calculate and display days between user visits
+
   const lastVisitElement = document.querySelector('.lastvisit');
   const lastVisitTimestamp = localStorage.getItem('lastVisit');
   if (lastVisitTimestamp) {
