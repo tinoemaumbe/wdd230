@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Chamber of Commerce</title>
-    <meta name="description" content="BYUI WDD230 Tinotenda Maumbe Tinoe_Chamber_of_Commerce">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/nomalize.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Roboto&display=swap" rel="stylesheet">
-    <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/weather.js"></script>
-    <script defer src ="scripts/links.js"></script>
-</head>
-<body>
-<header>
-    <div class="header-logo">
-        <picture>
-            <img src="images/logopit.jpg" alt="TCC logo">
-        </picture>
-    </div>
-    <div class="sitename">
-        <h1>
-            <a href="index.html">Tinoe<br>Chamber of Commerce</a>
-        </h1>
-    </div>
-
-    <div class="social-content">
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank">
-                <img class="facebook" src="images/facebook.png" alt="facebook-icon"></a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img class="instagram" src="images/instagram.png" alt="instagram-icon"></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Chamber of Commerce</title>
+        <meta name="description" content="BYUI WDD230 Tinotenda Maumbe Tinoe_Chamber_of_Commerce">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/nomalize.css">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Roboto&display=swap" rel="stylesheet">
+        <script defer src="scripts/main.js"></script>
+        <script defer src ="scripts/weather.js"></script>
+        <script defer src ="scripts/links.js"></script>
+    </head>
+     <body>
+        <header>
+            <div class="header-logo">
+                <picture>
+                    <img src="images/logopit.jpg" alt="TCC logo">
+                </picture>
+                </div>
+                <div class="sitename">
+                    <h1>
+                        <a href="index.html">Tinoe<br>Chamber of Commerce</a>
+                    </h1>
+                </div>
+                
+                <div class="social-content">
+                    <div class="social-icons">
+                            <a href="https://www.facebook.com" target="blank">
+                                <img class="facebook" src="images/facebook.png"
+                                alt="facebook-icon"></a>
+                                 <a href="https://www.instagram.com" target="blank">
+                                     <img class="instagram" src="images/instagram.png" alt="instagram-icon"></a>
+                                    
+                    </div>
+               </div>
+            <nav>
+                <button id="hum-button"><span>&#9776;</span><span>X</span></button>
+                <ul id="navicon">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="time">
+                <span id="time-today"><em></em></span>
+            </div>
+        </header>
+        <!-- Form Begins Here -->
+        <main  class ="join-main">
+                <h2>Join Gweru Chamber of Commerce</h2>
+                <form method="get" action="thankyou.html">
+                  <fieldset>
+                    <legend>Primary Contact</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required /></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required /></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com/someone@yahoo.com" required /></label>
+                    <label class="top">Phone*<input type="tel" name="phone" required /></label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Member Info</legend>
+                    <label class="top">Business Name*<input type="text" name="bus-name" title="Business Name" required /></label>
+                    <label class="top">Business Position<input type="text" name="bus-position" pattern="[A-Za-z\s-]{7,}"
+                        title="Business Position" /></label>
+                    <label class="top">Business Description <br /><textarea rows="3" name="bus-description"></textarea>
+                    </label> 
+                  </fieldset>
+                  <fieldset>
+                    <legend>Membership Package</legend>
+                    <label class="sbs"><input type="radio" name="member" value="np" /><span class="level">
+                        Non-profit </span><span class="cost"> Free </span></label>
+                    <p class="description">
+                      Explore the site and save contacts events and more.
+                    </p>
+                    <label class="sbs"><input type="radio" name="member" value="bronze" /><span class="level">
+                        Bronze </span><span class="cost"> $300(USD) </span></label>
+                    <p class="description">
+                      List your business or services on our directory online.
+                    </p>
+                    <label class="sbs"><input type="radio" name="member" value="silver" /><span class="level">
+                        Silver </span><span class="cost"> $400(USD) </span></label>
+                    <p class="description">
+                      Advertise and connect with people in the chamber's online directory.
+                    </p>
+                    <label class="sbs"><input type="radio" name="member" value="gold" /><span class="level">
+                        Gold </span><span class="cost"> $500(USD) </span></label>
+                    <p class="description">
+                      Become a part of the chamber's board or an organizers or a
+                      consultant.
+                    </p>
+                  </fieldset>
+                  <label><input type="hidden" id="submitdate" name="submitdate" value="" /></label>
+                  <input type="submit" class="submitBtn" value="Join the Chamber" />
+                </form>
+        </main>
+        <footer>
+            <div class="footlogoo">
+            <picture>
+                <img src="images/logo.png" alt="footer-logo">
+            </picture>
+            </div>
+            <div class="site-name-address-footer">
+               16 Cr Main Street16<br> Gweru,Zimbabwe 
+            </div>
+            <div class="footer-site-contact">
+                 info@tcc.co.zw <br> 054251038 <br> <a href="https://goo.gl/maps/ALkGD3KPfDJR5Ry86" target=
+                 "blank">📍Location Map</a>
+            </div>
+          <div class=lower-info>
+          <hr/>
+          <div class="copyright">
+            &copy; <span id="currentyear"></span> Gweru Chamber of Commerce | Tinotenda
+            Maumbe | WDD 230 Project | Last Updated:
+            <span id="currentdate"></span>
+          </div>
+          <div class="last-updated">
+            <p></p>
+          </div>
+    
         </div>
-    </div>
-    <nav>
-        <button id="hum-button"><span>&#9776;</span><span>X</span></button>
-        <ul id="navicon">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="time">
-        <span id="time-today"><em></em></span>
-    </div>
-</header>
-<!-- Form Begins Here -->
-<main class="join-main">
-    <h2>Join Tinoe Chamber of Commerce</h2>
-    <form method="get" action="thankyou.html">
-        <fieldset>
-            <legend>Primary Contact</legend>
-            <label class="top">First Name*<input type="text" name="fname" required /></label>
-            <label class="top">Last Name*<input type="text" name="lname" required /></label>
-            <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com/someone@yahoo.com" required /></label>
-            <label class="top">Phone*<input type="tel" name="phone" required /></label>
-        </fieldset>
-        <fieldset>
-            <legend>Member Info</legend>
-            <label class="top">Business Name*<input type="text" name="bus-name" title="Business Name" pattern="[A-Za-z\s-]{2,}" required /></label>
-            <label class="top">Business Position<input type="text" name="bus-position" pattern="[A-Za-z\s-]{7,}" title="Business Position" /></label>
-            <label class="top">Business Description<br /><textarea rows="3" name="bus-description"></textarea></label>
-        </fieldset>
-        <fieldset>
-            <legend>Membership Package</legend>
-            <label class="sbs"><input type="radio" name="member" value="np" /><span class="level">Non-profit</span><span class="cost"> Free </span></label>
-            <p class="description">Explore the site and save contacts, events, and more.</p>
-            <label class="sbs"><input type="radio" name="member" value="bronze" /><span class="level">Bronze</span><span class="cost"> $300(USD) </span></label>
-            <p class="description">List your business or services on our online directory.</p>
-            <label class="sbs"><input type="radio" name="member" value="silver" /><span class="level">Silver</span><span class="cost"> $500(USD) </span></label>
-            <p class="description">Get featured placement on our website and access to exclusive events.</p>
-            <label class="sbs"><input type="radio" name="member" value="gold" /><span class="level">Gold</span><span class="cost"> $800(USD) </span></label>
-            <p class="description">Enjoy premium benefits, including priority listing, advertisement opportunities, and more.</p>
-        </fieldset>
-        <!-- Hidden field -->
-        <input type="hidden" name="membership-hidden" value="hidden value">
-        <button type="submit">Submit</button>
-    </form>
-</main>
-<!-- Form Ends Here -->
-
-<footer>
-    <div class="footer-logo">
-        <picture>
-            <img src="images/logopit.jpg" alt="TCC logo">
-        </picture>
-    </div>
-    <div class="footer-info">
-        <address>
-            123 Main Street<br>
-            Tinoe City, TC 12345<br>
-            Phone: (555) 123-4567<br>
-            Email: info@tinoechamber.com
-        </address>
-        <p>&copy; 2023 Tinoe Chamber of Commerce. All rights reserved.</p>
-    </div>
-</footer>
-</body>
-</html>
+    </footer>
+        </body>
+        </html>   
