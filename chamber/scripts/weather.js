@@ -31,7 +31,62 @@ fetch(apiURL)
   });
 
 
+// Array of weather conditions
+const weatherConditions = [
+  { condition: "Sunny", icon: "sunny.png" },
+  { condition: "Rainy", icon: "rainy.png" },
+  { condition: "Cloudy", icon: "cloudy.png" },
+  // Add more weather conditions as needed
+];
 
+// Function to generate random weather conditions
+function generateWeatherForecast() {
+  const weatherForecast = document.querySelector(".weather-forecast");
+
+  // Clear existing forecast
+  weatherForecast.innerHTML = "";
+
+  // Generate forecast for three days
+  for (let i = 0; i < 3; i++) {
+    // Randomly select a weather condition
+    const randomIndex = Math.floor(Math.random() * weatherConditions.length);
+    const { condition, icon } = weatherConditions[randomIndex];
+
+    // Create forecast element
+    const weatherDay = document.createElement("div");
+    weatherDay.classList.add("weather-day");
+
+    // Create icon element
+    const iconImg = document.createElement("img");
+    iconImg.src = "images/weather/" + icon;
+    iconImg.alt = condition;
+
+    // Create heading element for day
+    const heading = document.createElement("h3");
+    heading.textContent = getDayOfWeek(i);
+
+    // Create paragraph element for weather condition
+    const conditionPara = document.createElement("p");
+    conditionPara.textContent = condition;
+
+    // Append elements to forecast
+    weatherDay.appendChild(iconImg);
+    weatherDay.appendChild(heading);
+    weatherDay.appendChild(conditionPara);
+    weatherForecast.appendChild(weatherDay);
+  }
+}
+
+// Function to get day of the week
+function getDayOfWeek(dayOffset) {
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const today = new Date();
+  const dayIndex = (today.getDay() + dayOffset) % 7;
+  return daysOfWeek[dayIndex];
+}
+
+// Generate weather forecast on page load
+window.addEventListener("load", generateWeatherForecast);
 
 
 
