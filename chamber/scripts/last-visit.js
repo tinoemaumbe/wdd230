@@ -19,3 +19,20 @@ if (lastvisit != 0) {
 
 window.localStorage.setItem("lastvisit", thisvisit);
 
+
+
+  // Calculate days between visits
+  const lastVisitElement = document.querySelector('.lastvisit');
+  const lastVisit = localStorage.getItem('lastVisit');
+  if (lastVisit) {
+    const currentDate = new Date();
+    const diffTime = Math.abs(currentDate - new Date(lastVisit));
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    lastVisitElement.textContent = `Days between visits: ${diffDays}`;
+  } else {
+    lastVisitElement.textContent = 'Welcome!';
+  }
+
+  // Update last visit date
+  localStorage.setItem('lastVisit', new Date().toString());
+
